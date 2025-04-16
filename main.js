@@ -1,8 +1,5 @@
-// main.js
-function greet() {
-    return "Hello from main.js!";
-  }
-  
-  console.log(greet());
-  module.exports = greet; // For testing
-  
+function sayHello() {
+  return "Hello from main!";
+}
+
+module.exports = { sayHello };
