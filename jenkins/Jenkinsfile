@@ -10,26 +10,26 @@ pipeline {
 
         stage('Install') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t ci-cd-js-app .'
+                bat 'docker build -t ci-cd-js-app .'
             }
         }
 
         stage('Deploy to Render') {
             steps {
                 
-                sh 'curl -X POST https://api.render.com/deploy/srv-cvvmdkjuibrs73bjd260?key=gJyQuR3jNtU'
+                bat 'curl -X POST https://api.render.com/deploy/srv-cvvmdkjuibrs73bjd260?key=gJyQuR3jNtU'
             }
         }
     }
