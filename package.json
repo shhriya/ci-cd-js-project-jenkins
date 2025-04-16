@@ -1,0 +1,12 @@
+{
+    "name": "ci-cd-js-project",
+    "version": "1.0.0",
+    "scripts": {
+      "test": "node tests/app.test.js",
+      "start": "npx serve app"
+    },
+    "devDependencies": {
+      "serve": "^14.2.0"
+    }
+  }
+  
