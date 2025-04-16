@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/your-username/ci-cd-js-project.git'
+                git 'https://github.com/shhriya/ci-cd-js-project-jenkins.git'
             }
         }
 
@@ -28,7 +28,8 @@ pipeline {
 
         stage('Deploy to Render') {
             steps {
-                sh 'curl -X POST https://api.render.com/deploy/srv-RENDER_SERVICE_ID?key=RENDER_API_KEY'
+                
+                sh 'curl -X POST https://api.render.com/deploy/srv-cvvmdkjuibrs73bjd260?key=gJyQuR3jNtU'
             }
         }
     }
